@@ -7,9 +7,9 @@ import java.util.Date;
 public class BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1036157524205408043L;
 	private Integer status;
-	private long createUser;
+	private String createUser;
 	private Date createTime;
-	private long updateUser;
+	private String updateUser;
 	private Date updateTime;
 
 	public Integer getStatus() {
@@ -20,11 +20,11 @@ public class BaseEntity implements Serializable {
 		this.status = status;
 	}
 
-	public long getCreateUser() {
+	public String getCreateUser() {
 		return createUser;
 	}
 
-	public void setCreateUser(long createUser) {
+	public void setCreateUser(String createUser) {
 		this.createUser = createUser;
 	}
 
@@ -36,11 +36,11 @@ public class BaseEntity implements Serializable {
 		this.createTime = createTime;
 	}
 
-	public long getUpdateUser() {
+	public String getUpdateUser() {
 		return updateUser;
 	}
 
-	public void setUpdateUser(long updateUser) {
+	public void setUpdateUser(String updateUser) {
 		this.updateUser = updateUser;
 	}
 
